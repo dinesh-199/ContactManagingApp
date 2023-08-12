@@ -1,0 +1,9 @@
+package ArrayPrograms;
+
+public class SmallNo {
+	
+	public static void main(String[] args) {
+		
+	}
+
+}

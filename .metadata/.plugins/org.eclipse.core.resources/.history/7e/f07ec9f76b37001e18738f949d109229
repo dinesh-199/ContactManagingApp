@@ -1,0 +1,28 @@
+package com.ashok.contactcontroller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.ashok.contactrepo.ContactRepo;
+import com.ashok.entity.Contact;
+
+@RestController
+public class ContactController {
+	
+	@Autowired
+	ContactRepo conReop;
+	
+	@PostMapping("/save")
+	public ResponseEntity<String> SaveContactDetails(Contact cont) {
+		
+		
+		conReop.save( cont);
+		
+		return null;
+	}
+	
+	
+
+}

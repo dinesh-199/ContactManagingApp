@@ -1,0 +1,21 @@
+package com.ashok.service;
+
+public class MessageService {
+	
+	public String getWelcomemsg()
+	{
+		String msg= "Welcome to ashok IT...!";
+		
+		return msg;
+		
+	}
+	
+	public String getGreetmsg()
+	{
+		String msg= "Good Morning";
+		
+		return msg;
+		
+	}
+
+}

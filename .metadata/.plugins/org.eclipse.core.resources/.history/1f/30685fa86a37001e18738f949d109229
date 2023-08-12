@@ -1,0 +1,10 @@
+package com.ashok.contactcontroller;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class ContactController {
+	
+	
+
+}

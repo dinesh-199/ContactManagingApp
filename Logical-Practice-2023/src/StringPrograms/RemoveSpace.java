@@ -1,0 +1,13 @@
+package StringPrograms;
+
+public class RemoveSpace {
+
+	public static void main(String[] args) {
+		
+	String s=" d i ne sh ";
+	   
+	System.out.println(s.replaceAll("\\s", "")); //dinesh
+	//System.out.println(s.trim());
+	
+	}	
+}

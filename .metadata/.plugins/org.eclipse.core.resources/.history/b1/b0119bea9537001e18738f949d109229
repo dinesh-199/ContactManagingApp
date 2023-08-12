@@ -1,0 +1,43 @@
+package com.ashok.contactcontroller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+//import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+
+import com.ashok.entity.Contact;
+import com.ashok.serviceImpl.ContactImpl;
+
+
+@RestController
+public class ContactController {
+	
+	@Autowired
+	ContactImpl co;
+	
+	@PostMapping("/save")
+	public String SaveContactDetails(@RequestBody Contact cont) {
+		
+		co.saveContactdetails(cont);
+			
+		return "Contact details saves Successfully....!!";
+		
+		
+	}
+	
+	public List<Contact> getContactDetails()
+	{
+		
+		
+		
+		return co.getContactDetails();
+		
+	}
+	
+	
+
+}

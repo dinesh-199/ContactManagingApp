@@ -1,0 +1,5 @@
+package com.ashok.contactrepo;
+
+public interface ContactRepo {
+
+}

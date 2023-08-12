@@ -1,0 +1,39 @@
+package com.ashok.dao;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+//import com.ashok.service.MessageService;
+
+public class ReportDao {
+	
+	private static final Logger logger=LoggerFactory.getLogger(ReportDao.class);
+	
+	public String getName(Integer id)
+	{
+		
+		String name=null;
+		
+		logger.info("getName---Start");
+		
+		if(id==101)
+		{
+			return "smith";
+		}
+		
+		else if(id==102) 
+		{
+			return "john";
+		}
+		else {
+			
+		return "Invalid Id";
+		}
+		
+		logger.info("getName---Start");
+		
+		return name;
+	}
+
+	
+}

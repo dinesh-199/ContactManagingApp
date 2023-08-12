@@ -1,0 +1,14 @@
+package com.ashok.serviceImpl;
+
+import com.ashok.service.ContactI;
+
+public class ContactImpl implements ContactI {
+
+	@Override
+	public void saveContactdetails() {
+		
+		
+		
+	}
+
+}

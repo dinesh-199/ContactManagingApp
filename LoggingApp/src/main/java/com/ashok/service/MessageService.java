@@ -1,0 +1,34 @@
+package com.ashok.service;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+public class MessageService {
+	
+private static final Logger logger=LoggerFactory.getLogger(MessageService.class);
+	
+	public String getWelcomemsg()
+	{
+		logger.debug("Getwelcomemsg--Start");
+		
+		String msg= "Welcome to ashok IT...!";
+		
+		logger.debug("Getwelcomemsg--end");
+		
+		return msg;
+		
+	}
+	
+	public String getGreetmsg()
+	{
+		logger.debug("getGreetmsg--Start");
+		
+		String msg= "Good Morning";
+		
+		logger.debug("getGreetmsg--end");
+		
+		return msg;
+		
+	}
+
+}

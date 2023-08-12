@@ -1,0 +1,21 @@
+package com.ashok.serviceImpl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.ashok.contactrepo.ContactRepo;
+import com.ashok.service.ContactI;
+
+public class ContactImpl implements ContactI {
+	
+	
+	@Autowired
+	ContactRepo conReop;
+
+	@Override
+	public void saveContactdetails() {
+		
+		
+		
+	}
+
+}

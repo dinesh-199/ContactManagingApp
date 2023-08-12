@@ -1,0 +1,7 @@
+package com.ashok.service;
+
+public interface ContactI {
+	
+	public void saveContactdetails();
+
+}

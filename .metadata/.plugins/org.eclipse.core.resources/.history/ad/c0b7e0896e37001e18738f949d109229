@@ -1,0 +1,11 @@
+package com.ashok.service;
+
+import org.springframework.stereotype.Service;
+
+import com.ashok.entity.Contact;
+@Service
+public interface ContactI {
+	
+	public void saveContactdetails(Contact con);
+
+}

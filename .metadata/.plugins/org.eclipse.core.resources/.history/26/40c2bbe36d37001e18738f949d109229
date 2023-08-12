@@ -1,0 +1,9 @@
+package com.ashok.service;
+
+import com.ashok.entity.Contact;
+
+public interface ContactI {
+	
+	public void saveContactdetails(Contact con);
+
+}

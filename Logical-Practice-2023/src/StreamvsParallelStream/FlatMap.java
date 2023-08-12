@@ -1,0 +1,24 @@
+package StreamvsParallelStream;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class FlatMap {
+	
+	public static void main(String[] args) {
+		
+		List<List<Integer>> l=new ArrayList<>();
+		l.add(Arrays.asList(1,2,3));
+		l.add(Arrays.asList(4,5,6));
+		l.add(Arrays.asList(7,8,9));
+		
+		//System.out.println(l);
+		
+		List<Integer> list = l.stream().flatMap(e->e.stream()).collect(Collectors.toList());
+		
+		System.out.println(list);
+	}
+
+}

@@ -1,0 +1,23 @@
+package com.ashok.dao;
+
+public class ReportDao {
+	
+	public String getName(Integer id)
+	{
+		if(id==101)
+		{
+			return "smith";
+		}
+		
+		else if(id==102) 
+		{
+			return "john";
+		}
+		else {
+			
+		return "Invalid Id";
+		}
+	}
+
+	
+}
